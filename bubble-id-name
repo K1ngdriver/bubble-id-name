@@ -1,0 +1,25 @@
+//Ordenar array com nomes
+var id = [56,109,8,4,71,13,15], trocaid
+
+var nome = ["Jair","Valdir","Bia","Ana","Manoel","Carla","Carlos"], trocanome
+
+console.clear()
+
+console.log('Antes de Ordenar: ', id, nome)
+
+for(n = 1; n < id.length; n++){
+  for(i = 0; i < id.length - 1;i++){
+    if(id[i] > id[i+1]){
+      trocaid = id[i]
+      id[i] = id[i+1]
+      id[i+1] = trocaid
+
+      trocanome = nome[i]
+      nome[i] = nome[i+1]
+      nome[i+1] = trocanome
+
+    }
+  }
+}
+
+console.log("Nomes Ordenados Conforme o ID: ", id, nome)
